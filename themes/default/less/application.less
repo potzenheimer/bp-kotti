@@ -1,0 +1,53 @@
+//
+// Application stylesheet
+// -----------------------------------------------
+
+.app-navbar {
+    margin-bottom: 0;
+}
+
+.app-toolbar + .app-navbar {
+    margin-top: @navbar-height;
+}
+
+// Add basic styling to all input types
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    .form-control();
+}
+
+// Reset tetarea height
+textarea {
+    height: auto;
+}
+
+// Form control sizing
+// Redefined here since our custom input field reset is applied later
+// during rendering and therefore overrides these
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+.input-lg {
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+
+.app-page {
+    font-size: @font-size-base * 1.25;
+}
+

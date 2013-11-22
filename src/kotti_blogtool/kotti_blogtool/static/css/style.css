@@ -1,0 +1,5 @@
+/* Put your content type specific CSS here. */
+
+.app-editbar + .app-navbar {
+    margin-top: 50px;
+}
